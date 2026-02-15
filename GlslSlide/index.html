@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>GLSL Slide</title>
+
+  <meta name="description" content="GLSL Slide"/>
+  <meta name="keywords" content="GLSL"/>
+  <meta name="author" content="koturn"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="GLSL Slide">
+  <meta name="application-name" content="GLSL Slide">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/dist/theme/night.css" id="theme">
+  <link rel="stylesheet" href="../reveal.js/plugin/highlight/zenburn.css" id="highlight">
+  <link rel="stylesheet" href="../css/custom.css"/>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown="content.md" data-separator="^(\s*-){6,}\s*$" data-separator-vertical="^(\s*-){3,5}\s*$">
+    </section>
+  </div>  <!-- div class="slides" -->
+</div>  <!-- div class="reveal" -->
+
+<script src="../reveal.js/dist/reveal.js"></script>
+<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../reveal.js/plugin/notes/notes.js"></script>
+<script src="../reveal.js/plugin/search/search.js"></script>
+<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    slideNumber: true,
+    plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+  });
+</script>
+<script src="../js/searchQuery.js"></script>
+<script src="../js/title.js"></script>
+<script src="../js/Animator.js"></script>
+<script src="../js/GlslQuadRenderer.js"></script>
+<script src="../js/canvasWebglAnimation.js"></script>
+
+</body>
+</html>
