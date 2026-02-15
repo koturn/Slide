@@ -2,6 +2,12 @@
   'use strict';
 
   /**
+   * Cache of window.document.
+   * @type {Document}
+   */
+  const doc = global.document;
+
+  /**
    * Send GET request to specified URL.
    * @param {string} url - Target function.
    * @return Promise object of XMLHttpRequest.
