@@ -10,14 +10,13 @@
    * @param {Event} e - Slide event.
    */
   function onSlideOpened(e) {
-    titleTagNames.some(tagName => {
+    for (let tagName of titleTagNames) {
       const titleTag = e.currentSlide.querySelector(tagName);
-      if (titleTag === null) {
-        return false;
+      if (titleTag !== null) {
+        doc.title = `${originalTitle} - ${e.indexh + 1}.${e.indexv + 1} ${titleTag.textContent}`;
+        break;
       }
-      doc.title = `${originalTitle} - ${e.indexh + 1}.${e.indexv + 1} ${titleTag.textContent}`;
-      return true;
-    });
+    }
   }
 
   Reveal.on('ready', onSlideOpened);
