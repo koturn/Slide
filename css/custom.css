@@ -16,10 +16,10 @@
   color: skyblue;
 }
 .reveal code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Courier New', Courier, 'Liberation Mono', monospace;
 }
 .reveal pre code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Courier New', Courier, 'Liberation Mono', monospace;
 }
 .reveal table {
   border: 1px solid #999999;
