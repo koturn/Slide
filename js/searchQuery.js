@@ -39,7 +39,7 @@
       // Try to get content to know the content exists or not.
       const response = await sendHeadRequest(url);
       if (response.status === 200) {
-        document.getElementById('theme').setAttribute('href', url);
+        doc.getElementById('theme').setAttribute('href', url);
       }
     } catch (e) {
       console.error(e);
@@ -57,7 +57,7 @@
       // Try to get content to know the content exists or not.
       const response = await sendHeadRequest(url);
       if (response.status === 200) {
-        document.getElementById('highlight').setAttribute('href', url);
+        doc.getElementById('highlight').setAttribute('href', url);
       }
     } catch (e) {
       console.error(e);
